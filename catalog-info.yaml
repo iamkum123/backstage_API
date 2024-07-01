@@ -4,12 +4,21 @@ metadata:
   name: backstage_API
   annotations:
     github.com/project-slug: iamkum123/backstage_API
-    backstage.io/techdocs-ref: value
+    backstage.io/techdocs-ref: dir:.
+    lighthouse.com/website-url: https://backstage.io
+  description: |
+    Backstage is an open-source developer portal that puts the developer experience first.
+  links:
+    - title: Website
+      url: http://backstage.io
+    - title: Documentation
+      url: https://backstage.io/docs
+    - title: Storybook
+      url: https://backstage.io/storybook
+    - title: Discord Chat
+      url: https://discord.com/invite/EBHEGzX
 spec:
-  lifecycle: production
-  type: openapi
-  visibility: public
-  owner: business
-  definition:
-    type: url
-    url: https://petstore.swagger.io/v2/swagger.json
+  type: library
+  owner: CNCF
+  lifecycle: experimental
+
