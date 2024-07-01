@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage_API
+  annotations:
+    github.com/project-slug: iamkum123/backstage_API
+spec:
+  type: other
+  lifecycle: unknown
+  owner: business
