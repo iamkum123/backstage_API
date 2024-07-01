@@ -4,6 +4,7 @@ metadata:
   name: backstage_API
   annotations:
     github.com/project-slug: iamkum123/backstage_API
+    backstage.io/techdocs-ref: value
 spec:
   lifecycle: production
   type: openapi
