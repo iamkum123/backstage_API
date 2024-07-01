@@ -5,6 +5,10 @@ metadata:
   annotations:
     github.com/project-slug: iamkum123/backstage_API
 spec:
-  type: other
-  lifecycle: unknown
+  lifecycle: production
+  type: openapi
+  visibility: public
   owner: business
+  definition:
+    type: url
+    url: https://petstore.swagger.io/v2/swagger.json
