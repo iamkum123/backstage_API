@@ -5,17 +5,17 @@ metadata:
   descriprion: webMethod
 relations:
   - type: ownedBy
-    targetRef: group:default/wM
+    targetRef: group:default/wm
     target:
       kind: group
       namespace: default
       name: wM
   - type: providesApi
-    targetRef: api:default/wM_API
+    targetRef: api:default/wm_API
     target:
       kind: api
       namespace: default
-      name: wayback-search
+      name: wM_API
 spec:
   type: service
   lifecycle: production
