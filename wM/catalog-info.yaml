@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: CatalogInfo
+metadata:
+  name: wM
+  description: wM service for demonstration
+  owner: wM
+spec:
+  type: service
+  lifecycle: production
+  tags:
+    - example
+    - demo
+  owner: wM
+  providesApis:
+    - name: wM_API
+      description: API for the example service
+      openApiDefinitionPath: openapi.yaml
+      baseUrl: https://api.example.com
+      type: openapi
+  relations:
+    - type: provides-api
+      target: wM_API
+      description: Provides API to Omnichannel
