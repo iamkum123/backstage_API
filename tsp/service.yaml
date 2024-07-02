@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: TSP
+  description: Telesales Team
+  tags:
+    - java
+    - data
+  annotations:
+    backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
+spec:
+  type: service
+  lifecycle: production
+  owner: TSP
+  #providesApis:
+   # - wM_API 
