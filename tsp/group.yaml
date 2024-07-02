@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: TSP
+  description: Telesales Team
+spec:
+  type: team
+  profile:
+    displayName: TSP
+    email: GRP_ISD_TSP@maxis.com.my
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Bailey&backgroundType=gradientLinear&backgroundColor=b6e3f4,ffd5dc,ffdfbf,c0aede
+  parent: Maxis Corp
+  children: []
+
