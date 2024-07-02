@@ -1,23 +1,24 @@
 apiVersion: backstage.io/v1alpha1
-kind: service
+kind: Component
 metadata:
   name: wM
-  description: wM service for demonstration
-  owner: wM
+  descriprion: webMethod
+relations:
+  - type: ownedBy
+    targetRef: group:default/wM
+    target:
+      kind: group
+      namespace: default
+      name: wM
+  - type: providesApi
+    targetRef: api:default/wM_API
+    target:
+      kind: api
+      namespace: default
+      name: wayback-search
 spec:
   type: service
   lifecycle: production
-  tags:
-    - example
-    - demo
   owner: wM
   providesApis:
-    - name: wM_API
-      description: API for the example service
-      openApiDefinitionPath: openapi.yaml
-      baseUrl: https://api.example.com
-      type: openapi
-  relations:
-    - type: provides-api
-      target: wM_API
-      description: Provides API to Omnichannel
+    - wM_API
