@@ -12,5 +12,5 @@ spec:
   type: service
   lifecycle: production
   owner: TSP
-  #providesApis:
-   # - wM_API 
+  providesApis:
+    - Gitlab_API 
