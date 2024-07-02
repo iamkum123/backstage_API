@@ -3,19 +3,9 @@ kind: Component
 metadata:
   name: wM
   descriprion: webMethod
-relations:
-  - type: ownedBy
-    targetRef: group:default/wm
-    target:
-      kind: group
-      namespace: default
-      name: wM
-  - type: providesApi
-    targetRef: api:default/wm_API
-    target:
-      kind: api
-      namespace: default
-      name: wM_API
+  annotations:
+    backstage.io/source-template: template:default/springboot-template
+    backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
 spec:
   type: service
   lifecycle: production
