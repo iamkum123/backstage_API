@@ -12,3 +12,5 @@ spec:
   owner: wM
   providesApis:
     - wM_API
+  consumesApis:
+    - Gitlab_API
