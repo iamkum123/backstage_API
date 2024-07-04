@@ -17,6 +17,6 @@ spec:
     $text: https://github.com/iamkum123/SwaggerFileHub/blob/main/wM_openapi.yaml
     #https://github.com/APIs-guru/openapi-directory/blob/dab6854d4d599aafb0eb36e6c7ae1fe0c37509b7/APIs/spotify.com/2021.4.2/openapi.yaml
 relationships:
-  - type: consumes-api
+  - type: consumes
     target: Gitlab_API
     description: This service consumes APIs provided by api-service
