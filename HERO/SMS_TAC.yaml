@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: SMS TAC
+  descriprion: HERO SMS TAC
+  annotations:
+    backstage.io/source-template: template:default/springboot-template
+    backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
+spec:
+  type: service
+  lifecycle: production
+  owner: HERO
+  providesApis:
+    - SMS_TAC_HERO
+  consumesApis:
+    - SEND_SMS_ONLINE
