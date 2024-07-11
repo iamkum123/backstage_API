@@ -5,7 +5,7 @@ metadata:
   description: The Send SMS NON MAXIS API
   tags: #must be lowercase
     - rest
-    - sms_non_maxis
+    - smsnonmaxis
     - esms
   annotations:
     # The annotation is deprecated, we use placeholders (see below) instead, remove it later.
