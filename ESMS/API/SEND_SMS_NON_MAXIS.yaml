@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: SEND_SMS_NON_MAXIS
+  description: The Send SMS NON MAXIS API
+  tags: #must be lowercase
+    - rest
+    - sms non maxis
+    - esms
+  annotations:
+    # The annotation is deprecated, we use placeholders (see below) instead, remove it later.
+    backstage.io/definition-at-location: 'url:https://raw.githubusercontent.com/APIs-guru/openapi-directory/master/APIs/spotify.com/v1/swagger.yaml'  
+spec:
+  type: openapi
+  lifecycle: production
+  owner: ESMS
+  definition:
+    $text: https://github.com/iamkum123/backstage_API/blob/main/ESB/ApiDefinition/SEND_SMS_ONLINE.yaml
+    #https://github.com/APIs-guru/openapi-directory/blob/dab6854d4d599aafb0eb36e6c7ae1fe0c37509b7/APIs/spotify.com/2021.4.2/openapi.yaml
