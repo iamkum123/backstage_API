@@ -4,7 +4,6 @@ metadata:
   name: SEND_SMS_ONLINE
   description: The Send SMS API
   tags:
-    - ESB
     - RESTAPI
     - SMS
   annotations:
