@@ -3,7 +3,7 @@ kind: API
 metadata:
   name: SEND_SMS_ONLINE
   description: The Send SMS API
-  tags:
+  tags: #must be lowercase
     - rest
     - sms
     - esb
