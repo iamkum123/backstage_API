@@ -1,0 +1,50 @@
+openapi: 3.0.1
+servers:
+  - url: https://api.spotify.com/v1 #defined as the baseurl
+info:
+  title: wM API
+  version: 2024.7.1
+  x-origin:
+    - format: openapi
+      #url: https://raw.githubusercontent.com/sonallux/spotify-web-api/master/spotify-web-api-generator-open-api/spotify-web-api-openapi.yml
+      version: "1.0"
+externalDocs:
+  description: Find more info on the official wM API Reference
+  url: https://developer.spotify.com/documentation/web-api/reference      
+tags:
+  - description: Send SMS Online API
+    externalDocs:
+      description: Find more info on the Send SMS Online API
+      url: https://developer.spotify.com/documentation/web-api/reference/#category-albums
+    name: sms-api
+paths:
+  /pcbs/searchSubscriber:
+    get:
+      description: Get Subscriber Infomation based on MSISDN/IMEI.
+      externalDocs:
+        description: Find more info on this API
+        url: 
+      parameters:
+        - description: API KEY for channel
+          in: header
+          name: x-api-key
+          required: true 
+          schema:
+            type: string
+        - description: resourceType
+          in: query
+          name: resourceType
+          required: true 
+          schema:
+            type: string
+        - description: resourceValue
+          in: query
+          name: resourceValue
+          required: true 
+          schema:
+            type: string  
+      responses:
+        "200":
+          description: On success, the HTTP status code in the response header is 200 OK   
+      tags:
+        - sms-api         
