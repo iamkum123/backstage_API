@@ -1,10 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: SEND
-  description: The SEND_SMS_ONLINE API
+  name: SEND_SMS_ONLINE
+  description: The Send SMS API
   tags:
-    - ESB
+    - spotify
+    - rest
   annotations:
     # The annotation is deprecated, we use placeholders (see below) instead, remove it later.
     backstage.io/definition-at-location: 'url:https://raw.githubusercontent.com/APIs-guru/openapi-directory/master/APIs/spotify.com/v1/swagger.yaml'  
