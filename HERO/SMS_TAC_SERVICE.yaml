@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: SMS TAC
+  name: SMS_TAC
   descriprion: HERO SMS TAC
   annotations:
     backstage.io/source-template: template:default/springboot-template
