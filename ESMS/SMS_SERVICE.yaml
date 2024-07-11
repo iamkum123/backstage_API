@@ -11,4 +11,4 @@ spec:
   lifecycle: production
   owner: ESMS
   providesApis:
-    - SEND_SMS_NON_MAXIS_ESMS
+    - SEND_SMS_NON_MAXIS
