@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Maxis Corp
+  description: Telesales Team
+spec:
+  type: team
+  profile:
+    displayName: Maxis Organization
+    email: Maxis@example.com.my
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Bailey&backgroundType=gradientLinear&backgroundColor=b6e3f4,ffd5dc,ffdfbf,c0aede
+  children: [ESB, tsp, HERO]
