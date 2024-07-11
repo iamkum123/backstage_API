@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Send SMS
+  name: SendSMS
   descriprion: DID Send SMS
   annotations:
     backstage.io/source-template: template:default/springboot-template
