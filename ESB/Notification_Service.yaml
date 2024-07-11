@@ -13,4 +13,4 @@ spec:
   providesApis:
     - SEND_SMS_ONLINE
   consumesApis:
-    - Gitlab_API
+    - SEND_SMS_NON_MAXIS
