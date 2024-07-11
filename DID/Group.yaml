@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: DID
+  description: DID Team
+spec:
+  type: team
+  profile:
+    displayName: DID
+    email: DID@sample.com.my
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Bailey&backgroundType=gradientLinear&backgroundColor=b6e3f4,ffd5dc,ffdfbf,c0aede
+  parent: Maxis Corp
+  children: []
