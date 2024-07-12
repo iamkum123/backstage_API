@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: SMSC
+  description: SMSC Team
+spec:
+  type: team
+  profile:
+    displayName: SMSC
+    email: SMSC@sample.com.my
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Bailey&backgroundType=gradientLinear&backgroundColor=b6e3f4,ffd5dc,ffdfbf,c0aede
+  parent: maxisorg
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: SEND_SMS_MAXIS_SMSC
+  descriprion: ESMS SMS (NON MAXIS MOBILE NUMBER)
+  annotations:
+    backstage.io/source-template: template:default/springboot-template
+    backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
+spec:
+  type: service
+  lifecycle: production
+  owner: SMSC
+  providesApis:
+    - send_sms_non_maxis_smsc
