@@ -29,3 +29,5 @@ spec:
   owner: TSP
   providesApis:
     - SMS 
+  consumesApis:
+    - SEND_SMS_ONLINE
