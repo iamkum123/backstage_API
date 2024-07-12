@@ -28,3 +28,4 @@ spec:
     - SEND_SMS_ONLINE
   consumesApis:
     - SEND_SMS_NON_MAXIS
+    - SEND_SMS_MAXIS_SMSC
