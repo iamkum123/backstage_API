@@ -11,3 +11,20 @@ spec:
     picture: https://api.dicebear.com/7.x/identicon/svg?seed=Bailey&backgroundType=gradientLinear&backgroundColor=b6e3f4,ffd5dc,ffdfbf,c0aede
   parent: maxisorg
   children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Notification
+  descriprion: ESB Notification
+  annotations:
+    backstage.io/source-template: template:default/springboot-template
+    backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
+spec:
+  type: service
+  lifecycle: production
+  owner: ESB
+  providesApis:
+    - SEND_SMS_ONLINE
+  consumesApis:
+    - SEND_SMS_NON_MAXIS
