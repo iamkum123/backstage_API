@@ -8,8 +8,8 @@ metadata:
     backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
 spec:
   type: service
-  lifecycle: production
-  owner: development/guest
+  lifecycle: development
+  owner: guest
   providesApis:
     - DID_SEND_SMS
   consumesApis:
