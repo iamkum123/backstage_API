@@ -9,7 +9,7 @@ metadata:
 spec:
   type: service
   lifecycle: development
-  owner: guests
+  owner: tsp
   providesApis:
     - DID_SEND_SMS
   consumesApis:
